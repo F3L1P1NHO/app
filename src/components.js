@@ -12,4 +12,15 @@ const ButtonLogin =() =>{
     )
 }
 
+const ButtonSUP =() =>{
+    return(
+        <TouchableHighlight style={style.Button_SUP}>
+            <Text style={{textDecorationLine:'underline',fontSize: 20}}>
+                Sign Up
+            </Text>
+        </TouchableHighlight>
+    )
+}
+
 export default ButtonLogin
+export {ButtonSUP}

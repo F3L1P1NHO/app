@@ -2,7 +2,7 @@
 import * as React from 'react'
 import { TextInput, View,Image } from "react-native";
 import style from './styles';
-import ButtonLogin from './components';
+import ButtonLogin, { ButtonSUP } from './components';
 
 function App() {
   return (
@@ -20,6 +20,8 @@ function App() {
       <TextInput  placeholder='Password' keyboardType='visible-password'style={style.txtInp}>
         
       </TextInput>
+
+      <ButtonSUP/>
 
       <ButtonLogin/>
     </View>

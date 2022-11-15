@@ -28,6 +28,9 @@ const style = StyleSheet.create({
         marginTop: '15%',
         justifyContent: 'center'
     },
+    Button_SUP:{
+        marginTop: '5%'
+    }
     
 })
 
