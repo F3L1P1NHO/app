@@ -32,7 +32,23 @@ const style = StyleSheet.create({
         marginTop: '5%'
     },
     view_home:{
-        flexGrow: 1
+        flexGrow: 1,
+        backgroundColor: 'purple',
+    },
+    home_containers:{
+        width: '35%',
+        backgroundColor: 'white',
+        borderRadius: 10,
+        justifyContent: 'center',
+        alignItems: 'center'
+        
+    },
+    optionContainer:{
+        flexDirection: 'row',
+        height:'15%',
+        backgroundColor: 'red',
+        marginTop: '25%',
+        justifyContent: 'space-around'
     }
 
     
