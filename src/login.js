@@ -1,9 +1,8 @@
 import React from 'react';
-import { TextInput, View,Image } from "react-native";
+import {TextInput, View, Image, TouchableHighlight, Text} from 'react-native';
 import style from './styles';
-import ButtonLogin, { ButtonSUP } from './components';
 
-function Login() {
+function Login({navigation}) {
   return (
     <View style={style.view_login}>
       <View style={style.ImageLogin}>
@@ -19,11 +18,19 @@ function Login() {
         keyboardType="visible-password"
         style={style.txtInp}></TextInput>
 
-      <ButtonSUP />
+      <TouchableHighlight style={style.Button_SUP}>
+        <Text style={{textDecorationLine: 'underline', fontSize: 20}}>
+          Sign Up
+        </Text>
+      </TouchableHighlight>
 
-      <ButtonLogin />
+      <TouchableHighlight
+        style={style.Button_Login}
+        onPress={() => navigation.navigate('Home')}>
+        <Text style={{textAlign: 'center', fontSize: 25}}>Login</Text>
+      </TouchableHighlight>
     </View>
   );
 }
 
-export default Login
+export default Login;

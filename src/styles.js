@@ -30,7 +30,11 @@ const style = StyleSheet.create({
     },
     Button_SUP:{
         marginTop: '5%'
+    },
+    view_home:{
+        flexGrow: 1
     }
+
     
 })
 
