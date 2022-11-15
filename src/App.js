@@ -1,30 +1,18 @@
 
 import * as React from 'react'
-import { TextInput, View,Image } from "react-native";
-import style from './styles';
-import ButtonLogin, { ButtonSUP } from './components';
+import { NavigationContainer } from '@react-navigation/native';
+import { createStackNavigator } from '@react-navigation/stack';
+import Login from './login';
+
+const Stack = createStackNavigator()
 
 function App() {
   return (
-    <View style={style.view_login}>
-      <View style={style.ImageLogin}>
-        <Image 
-          source={require('../images/account.png')}
-        />
-      </View>
-      
-
-      <TextInput placeholder='Email' keyboardType='email-address' style={style.txtInp}>
-
-      </TextInput>
-      <TextInput  placeholder='Password' keyboardType='visible-password'style={style.txtInp}>
-        
-      </TextInput>
-
-      <ButtonSUP/>
-
-      <ButtonLogin/>
-    </View>
+    <NavigationContainer>
+      <Stack.Navigator>
+        <Stack.Screen name='Login' component={Login}/>
+      </Stack.Navigator>
+    </NavigationContainer>
   )
 }
 
