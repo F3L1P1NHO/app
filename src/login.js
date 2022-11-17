@@ -1,10 +1,25 @@
-import React from 'react';
-import {TextInput, View, Image, TouchableHighlight, Text} from 'react-native';
+import React, {useState} from 'react';
+import {
+  TextInput,
+  View,
+  Image,
+  TouchableHighlight,
+  Text,
+  Modal,
+} from 'react-native';
 import style from './styles';
 
 function Login({navigation}) {
+  const [estado, setEstado] = useState(false);
+
   return (
     <View style={style.view_login}>
+      <Modal visible={estado}>
+        <View style={style.view_SU}>
+
+        </View>
+      </Modal>
+
       <View style={style.ImageLogin}>
         <Image source={require('../images/account.png')} />
       </View>
@@ -18,7 +33,8 @@ function Login({navigation}) {
         keyboardType="visible-password"
         style={style.txtInp}></TextInput>
 
-      <TouchableHighlight style={style.Button_SUP}>
+      <TouchableHighlight style={style.Button_SUP} 
+        onPress={() => setEstado(true)}>
         <Text style={{textDecorationLine: 'underline', fontSize: 20}}>
           Sign Up
         </Text>

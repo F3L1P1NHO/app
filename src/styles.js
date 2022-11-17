@@ -49,6 +49,10 @@ const style = StyleSheet.create({
         backgroundColor: 'red',
         marginTop: '25%',
         justifyContent: 'space-around'
+    },
+    view_SU:{
+        flexGrow: 1,
+        backgroundColor: 'gray'
     }
 
     
