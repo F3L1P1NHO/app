@@ -27,29 +27,38 @@ function Login({navigation}) {
               placeholder="Address"></TextInput>
           </View>
 
-          <TouchableHighlight style={style.Button_confirm}>
+          <TouchableHighlight
+            style={style.Button_confirm}
+            onPress={() => setEstado(false)}>
             <Text style={{textAlign: 'center', fontSize: 30}}>Sign UP</Text>
           </TouchableHighlight>
         </View>
       </Modal>
 
       <View style={style.ImageLogin}>
-        <Image source={require('../images/account.png')} />
+        <Image source={require('../images/logo_app.png')} />
       </View>
 
-      <TextInput
-        placeholder="Email"
-        keyboardType="email-address"
-        style={style.txtInp}></TextInput>
-      <TextInput
-        placeholder="Password"
-        keyboardType="visible-password"
-        style={style.txtInp}></TextInput>
+      <View style={style.viewTextinp}>
+        <TextInput
+          placeholder="Email"
+          keyboardType="email-address"
+          style={style.txtInp}></TextInput>
+        <TextInput
+          placeholder="Password"
+          keyboardType="visible-password"
+          style={style.txtInp}></TextInput>
+      </View>
 
       <TouchableHighlight
         style={style.Button_SUP}
         onPress={() => setEstado(true)}>
-        <Text style={{textDecorationLine: 'underline', fontSize: 20}}>
+        <Text
+          style={{
+            textDecorationLine: 'underline',
+            fontSize: 20,
+            color: 'white',
+          }}>
           Sign Up
         </Text>
       </TouchableHighlight>
@@ -57,7 +66,9 @@ function Login({navigation}) {
       <TouchableHighlight
         style={style.Button_Login}
         onPress={() => navigation.navigate('Home')}>
-        <Text style={{textAlign: 'center', fontSize: 25}}>Login</Text>
+        <Text style={{textAlign: 'center', fontSize: 25, color: 'black'}}>
+          Login
+        </Text>
       </TouchableHighlight>
     </View>
   );

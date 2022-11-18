@@ -8,14 +8,21 @@ const style = StyleSheet.create({
         flexGrow: 1,
         backgroundColor: '#1C1C1C',
         justifyContent: 'center',
-        alignItems: 'center'
+        alignItems: 'center',
     },
     ImageLogin:{
-        marginBottom: '5%'
+        marginBottom: '15%'
+    },
+    viewTextinp:{
+        width: '80%',
+        height: '20%',
+        justifyContent: 'center',
+        alignItems: 'center',
+        
     },
     txtInp:{
-        width: '70%',
-        height: '7%',
+        width: '80%',
+        height: '35%',
         borderRadius: 30,
         backgroundColor: 'white',
         marginTop: '5%'
@@ -24,9 +31,10 @@ const style = StyleSheet.create({
         width: '70%',
         height: '8%',
         borderRadius: 30,
-        backgroundColor: 'lightblue',
-        marginTop: '15%',
-        justifyContent: 'center'
+        backgroundColor: 'yellow',
+        marginTop: '6%',
+        justifyContent: 'center',
+        marginBottom: '30%'
     },
     Button_SUP:{
         marginTop: '5%'
