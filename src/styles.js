@@ -52,7 +52,29 @@ const style = StyleSheet.create({
     },
     view_SU:{
         flexGrow: 1,
-        backgroundColor: 'gray'
+        backgroundColor: 'gray',
+        justifyContent: 'space-evenly',
+        alignItems: 'center'
+    },
+    view_TxtInp:{
+        width: '100%',
+        height: '40%',
+        backgroundColor: 'red',
+        justifyContent: 'space-around',
+        alignItems: 'center'
+    },
+    TxtInputSU:{
+        width: '70%',
+        height: '15%',
+        borderRadius: 20,
+        borderWidth: 2
+    },
+    Button_confirm:{
+        borderRadius: 30,
+        borderWidth: 2,
+        width: '55%',
+        height: '10%',
+        justifyContent: 'center'
     }
 
     

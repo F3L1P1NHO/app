@@ -16,7 +16,20 @@ function Login({navigation}) {
     <View style={style.view_login}>
       <Modal visible={estado}>
         <View style={style.view_SU}>
+          <Text>Please, put your informations at the bottom!</Text>
+          <View style={style.view_TxtInp}>
+            <TextInput style={style.TxtInputSU} placeholder="Email"></TextInput>
+            <TextInput
+              style={style.TxtInputSU}
+              placeholder="Password"></TextInput>
+            <TextInput
+              style={style.TxtInputSU}
+              placeholder="Address"></TextInput>
+          </View>
 
+          <TouchableHighlight style={style.Button_confirm}>
+            <Text style={{textAlign: 'center', fontSize: 30}}>Sign UP</Text>
+          </TouchableHighlight>
         </View>
       </Modal>
 
@@ -33,7 +46,8 @@ function Login({navigation}) {
         keyboardType="visible-password"
         style={style.txtInp}></TextInput>
 
-      <TouchableHighlight style={style.Button_SUP} 
+      <TouchableHighlight
+        style={style.Button_SUP}
         onPress={() => setEstado(true)}>
         <Text style={{textDecorationLine: 'underline', fontSize: 20}}>
           Sign Up
