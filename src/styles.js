@@ -7,11 +7,11 @@ const style = StyleSheet.create({
     view_login:{
         flexGrow: 1,
         backgroundColor: '#1C1C1C',
-        justifyContent: 'center',
+        justifyContent: 'flex-start',
         alignItems: 'center',
     },
     ImageLogin:{
-        marginBottom: '15%'
+        alignItems: 'flex-start'
     },
     viewTextinp:{
         width: '80%',
@@ -41,48 +41,65 @@ const style = StyleSheet.create({
     },
     view_home:{
         flexGrow: 1,
-        backgroundColor: 'purple',
+        backgroundColor: '#1C1C1C',
+        justifyContent: 'flex-start',
+        alignItems: 'space-between'
     },
-    home_containers:{
-        width: '35%',
-        backgroundColor: 'white',
-        borderRadius: 10,
-        justifyContent: 'center',
-        alignItems: 'center'
-        
-    },
-    optionContainer:{
-        flexDirection: 'row',
-        height:'15%',
-        backgroundColor: 'red',
-        marginTop: '25%',
-        justifyContent: 'space-around'
-    },
+    
     view_SU:{
         flexGrow: 1,
-        backgroundColor: 'gray',
+        backgroundColor: '#1C1C1C',
         justifyContent: 'space-evenly',
         alignItems: 'center'
     },
     view_TxtInp:{
-        width: '100%',
+        width: '90%',
         height: '40%',
-        backgroundColor: 'red',
+        backgroundColor: '#070090',
         justifyContent: 'space-around',
-        alignItems: 'center'
+        alignItems: 'center',
+        borderWidth: 6,
+        borderRadius: 20
     },
     TxtInputSU:{
         width: '70%',
         height: '15%',
-        borderRadius: 20,
-        borderWidth: 2
+        borderRadius: 15,
+        borderWidth: 2,
+        backgroundColor: 'white'
     },
     Button_confirm:{
         borderRadius: 30,
         borderWidth: 2,
         width: '55%',
         height: '10%',
-        justifyContent: 'center'
+        justifyContent: 'center',
+        backgroundColor: 'yellow'
+    },
+    TxtInp_search:{
+        width: '60%',
+        height: '35%',
+        borderRadius: 15,
+        borderWidth: 2,
+        backgroundColor: 'white'
+    },
+    Button_search:{
+        borderRadius: 30,
+        borderWidth: 2,
+        width: '30%',
+        height: '30%',
+        justifyContent: 'center',
+        backgroundColor: 'yellow'
+    },
+    view_search:{
+        flexDirection: 'row',
+        height:'20%',
+        width:'100%',
+        marginTop:'10%',
+        
+        justifyContent:'space-around',
+        alignItems: 'center'
+    
     }
 
     

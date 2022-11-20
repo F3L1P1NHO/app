@@ -15,9 +15,19 @@ function Login({navigation}) {
 
   return (
     <View style={style.view_login}>
-      <Modal visible={estado}>
+      <Modal visible={estado}
+      
+      >
         <View style={style.view_SU}>
-          <Text>Please, put your informations at the bottom!</Text>
+          <View style={{flexDirection: 'row',alignItems: 'center'}}>
+            <TouchableHighlight style={{width: '20%'}}>
+            <Image source={require('../images/left-arrow.png')} style={{width:'95%',height: '30%',marginRight: 20}}></Image>
+            </TouchableHighlight>
+          
+          <Text style={{fontSize: 30,color: 'white',fontFamily:'serif',fontWeight: 'bold'}}>Create An Account</Text>
+          </View>
+          
+          <Image source={require('../images/account.png')}></Image>
           <View style={style.view_TxtInp}>
             <TextInput style={style.TxtInputSU} placeholder="Email"></TextInput>
             <TextInput
@@ -31,7 +41,7 @@ function Login({navigation}) {
           <TouchableHighlight
             style={style.Button_confirm}
             onPress={() => setEstado(false)}>
-            <Text style={{textAlign: 'center', fontSize: 30}}>Sign UP</Text>
+            <Text style={{textAlign: 'center', fontSize: 30,color: 'black'}}>Sign UP</Text>
           </TouchableHighlight>
         </View>
       </Modal>
